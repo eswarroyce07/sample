@@ -1,1 +1,12 @@
-wertyuioppoiuyt
+git init : to initialize the github
+git add : just to push the code from changing area to staging area
+git commit -m : just push it to cloud and for the message
+git push origin main : just to push the code to github here origin is the address and main is the branch
+git remote -v : just to check value stored in origin
+git log : just to check all the commits till now
+git branch : just to create a new branch
+git checkout : just to change the branch
+git config --global user.name : just to set the username
+git config --global user.email:just to set the email
+git config --list : just to print all the environment variables
+git pull : just to pull the main branch code after merge
