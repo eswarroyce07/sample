@@ -1,0 +1,35 @@
+/* h1{
+    background-color: green;
+}
+
+#a{
+    color: red;
+    background-color: yellow;
+}
+
+.b{
+    border: 10px solid;
+} */
+
+
+/* 1. universal selector */
+* { 
+    border: 1px solid red ;
+
+}
+
+/* 2. tag selector */
+h1 {background-color: lightblue;
+}
+
+/* 3. id selector */
+#a{
+    color: green;
+    background-color: lightgray;
+}
+
+/* 4. class selector */
+.b{
+    color: rgb(215, 48, 48);
+    border: 2px solid;
+}
