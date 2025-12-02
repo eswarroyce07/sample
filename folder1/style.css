@@ -1,35 +1,59 @@
-/* h1{
-    background-color: green;
+/* Universal selector - * */
+*{
+    /*border: 1px solid black;*/
 }
 
+/* tag selector */
+h1{
+    background-color: aquamarine;
+}
+
+/* Id selector - # */
 #a{
-    color: red;
-    background-color: yellow;
+    color: white;
+    background-color: aqua;
 }
 
+/* class selector - . */
 .b{
-    border: 10px solid;
-} */
-
-
-/* 1. universal selector */
-* { 
-    border: 1px solid red ;
-
+    border: 10px solid blueviolet;
 }
 
-/* 2. tag selector */
-h1 {background-color: lightblue;
+/* Group selector - , */
+h1, h2{
+    text-align: center;
 }
 
-/* 3. id selector */
-#a{
+/* Descendant selector */
+div p{
+    text-align: right;
+}
+
+/* Child selector - > */
+div > p{
     color: green;
-    background-color: lightgray;
+    background-color: aqua;
 }
 
-/* 4. class selector */
-.b{
-    color: rgb(215, 48, 48);
-    border: 2px solid;
+/* Attribute selector */
+button[type="submit"]{
+    color: red;
+    font-size: 32px;
+}
+
+/* Pseudo class - : */
+li:nth-child(2){
+    color: mediumvioletred;
+    font-size: large;
+}
+
+li:nth-child(3):hover{
+    color: orange;
+    font-size: medium;
+}
+
+/* Pseudo elements - :: */
+#a::first-line{
+    font-size: 32px;
+    color: purple;
 }
