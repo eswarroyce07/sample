@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Manipulation Practice UI</title>
+<link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+        <h2>DOM Manipulation Practice UI</h2>
+
+        <p id="text">This is a sample text.</p>
+
+        <div class="btn-row">
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="changeColor()">Change Background Color of Box</button>
+        </div>
+
+        <div id="box">I am a Box</div>
+
+        <div class="btn-row">
+            <button onclick="hideBox()">Hide Box</button>
+            <button onclick="showBox()">Show Box</button>
+        </div>
+
+        <div class="input-row">
+            <input type="text" id="itemInput" placeholder="Enter item...">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <ul id="list"></ul>
+    </div>
+</div>
+
+<script src="Assignment.js"></script>
+</body>
+</html>
