@@ -65,3 +65,30 @@ addtwonumbers(30,50);
 subtracttwonumbers(80,40);
 multitwonumbers(10,5);
 dividetwonumbers(100,20);
+
+// Q1: Create Array From Arguments
+const createArray = (a, b, c) => [a, b, c];
+console.log(createArray(1, 2, 3));
+
+// Q2: Push Only Strings
+const stringOnly = (...args) => args.filter(arg => typeof arg === 'string');
+
+// Q3: Create Array of Squares
+const squareNumbers = (...nums) => nums.map(n => n * n);
+console.log(squareNumbers(2, 3, 4));
+
+// Q4: Filter Even Numbers
+const getEvenNumbers = (...nums) => nums.filter(n => n % 2 === 0);
+
+// Q5: Create Array of Names
+const collectNames = (...names) => names.map(name => name.toUpperCase());
+console.log(collectNames("sid", "raj"));
+
+// Q6: Convert Arguments Into Objects
+const makeUser = (name, age, city) => [{ name, age, city }];
+
+// Q7: Mix values, return only numbers
+const addTen = (...args) => args.filter(arg => typeof arg === 'number').map(n => n + 10);
+
+// Q8: Function with default values
+const createFruitArray = (...args) => args.length ? args : ["apple", "banana"];
